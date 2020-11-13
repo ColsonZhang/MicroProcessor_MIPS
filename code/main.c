@@ -59,12 +59,12 @@ int main() {
             if( numbers_new[index_2] > numbers_new[index_max] ){
                 index_max = index_2 ;
             }
-            if(index_max != index){
-                term = numbers_new[index] ;
-                numbers_new[index] = numbers_new[index_max] ;
-                numbers_new[index_max] = term ;
-            }
         }
+        if(index_max != index){
+            term = numbers_new[index] ;
+            numbers_new[index] = numbers_new[index_max] ;
+            numbers_new[index_max] = term ;
+        }    
     }
 
     #ifdef PRINT
